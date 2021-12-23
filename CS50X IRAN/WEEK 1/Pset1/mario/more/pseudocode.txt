@@ -1,0 +1,8 @@
+First get height and then check number so, if was not between 1 and 8  then repet  this step ;
+then show the sharp sing and space according to number of height ;
+
+for instance if get 4 height show this result:
+#
+##
+###
+####
