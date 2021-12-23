@@ -1,0 +1,195 @@
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    /*text-align: center;*/
+}
+
+main img
+{
+  /* Constrain images on small screens */
+  /*max-width: 80%;*/
+    border-color:   #B551B4 ;
+    border-style:  outset ;
+    width:  500px;
+    height: 500px;
+    align-items: center;
+}
+
+
+
+/*---------------------------------------------------*/
+
+body
+{
+    background:    #AED6D5 ;
+    margin-left: 10px ;
+    margin-right: 10px ;
+
+
+}
+
+div
+    {
+    text-align: center;
+
+    }
+
+#birjand
+{
+    color: #CC0000;
+    font: bold ;
+    font-family:  "Passion One", Impact, Charcoal, sans-serif;
+    /*font-family: "@Malgun Gothic"*/
+    font-size: xx-large;
+}
+
+#well
+{
+    font-family: "@Malgun Gothic";
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: x-large;
+}
+
+.intro
+{
+    text-align: center;
+    /*font-family: fantasy;*/
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: x-large;
+}
+
+.radif
+{
+    color: #0818CC;
+    margin-left: 10px ;
+    font-stretch: wider  ;
+    font-size: medium;
+}
+
+
+a
+{
+    font-family: Lobster;
+    font-size: large;
+    color: #0A0006;
+
+}
+
+a:hover
+{
+    color:  #FF0000 ;
+}
+
+p
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    /*grid-auto-columns: auto;*/
+    /*grid-auto-rows: auto;*/
+}
+
+.color
+{
+    color: #FF0000;
+    margin-left: 5px;
+}
+
+ hr.class-1
+ {
+    border-top: 2px solid #0000FF;
+ }
+
+ hr.class-2
+{
+    border-top: 10px double #FF0000;
+    color: #FF0000;
+}
+
+ hr.class-3
+{
+    border-top: 1px dashed #8c8b8b;
+}
+
+hr.class-4
+{
+    border-top: 2px dotted #FF0000;
+}
+
+hr.class-5
+{
+    background-color: #fff;
+    border-top: 2px dashed #8c8b8b;
+}
+
+hr.class-6
+{
+    background-color: #fff;
+    border-top: 5px dotted #8c8b8b;
+}
+
+ b {
+    color: #FF0000;
+ }
+
+ #bold1
+ {
+     color: #FF0000;
+ }
+
+ b:hover
+{
+    color:  #0000FF ;
+}
+
+#footermyname
+{
+     color: #F96124;
+}
+
+#footerp
+{
+    color: #FFFFFF;
+}
+
+input:invalid
+{
+    border: 2px outset red
+}
+
+input:valid
+{
+    border: 3px solid  green
+
+}
+
+textarea:invalid
+{
+    border: 2px outset red
+}
+
+
+textarea:valid
+{
+    border: 2px outset green
+}
+
+
+#submit
+{
+     border: 1px  solid  yellow
+}

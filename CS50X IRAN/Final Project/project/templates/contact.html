@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    contact
+{% endblock %}
+
+{% block main %}
+
+        <h5 > <b>  About Me:  </b> </h5>
+        <p>
+            Hi . My name is Hamid Reza Golnegri. I have a master's degree in electronic engineering with a focus on digital electronic systems.
+            I have been programming with different languages for 10 years: Like C , Python , Java Script ,Html, Css ,  Delphi , Assembly , VHDL and SQL Database .
+            I have also designed electronic circuitry , Microcontroller programming ,  Altium Designer and produced industrial printed circuit boards (PCB).
+            Here are some of my favorites :
+        </p>
+
+        <ul>
+           <li><p> Machine Learning </p></li>
+           <li><p> Image Processing </p></li>
+           <li><p> Circuit Design   </p></li>
+           <li><p> Web design       </p></li>
+           <li><p> Artificial Intelligence</p>  </li>
+
+        </ul>
+
+        <p> If you have any questions, I will be happy to share them with you  </p>
+
+        <p>  <b>  Contact Me :  </b>   Golnegary@gmail.com  </p>
+
+        <hr class="class-4" style="width: 950px" />
+
+        <p> To send a comment or question, please send your message from the form below:  </p>
+
+    <div class="col align-items-end">
+            <div style="border:10px solid light blue">
+
+                <form  action="/contactme" method="post" >
+
+                    <label  >Email address</label>
+                    <input type="email"  name="email"  id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <label  >Password</label>
+                    <input id="password" class="form-control" name="password" placeholder="Minimum 4 digit" type="password"  required minlength="4" >
+                    <!--<input type="password"  name="password" id="exampleInputPassword1" required>-->
+                    <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+                <div class="col align-items-start">
+                    <label id="emailHelp">  We'll never  <b>share </b> your email with anyone else.</labels>
+                </div>
+                    <textarea class="mx-auto" name="opininion" style="width: 650px" rows="5" cols="50" required ></textarea>
+                </form>
+    </div>
+
+{% endblock %}

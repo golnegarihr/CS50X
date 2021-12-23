@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+      <label style=" font-weight: bold"> You Enter with Username : @ </label>
+      <label style=" font-weight: bold" style="color: #FF23000">{{username}} </label>
+<div>
+ <form action="/savechange" method="post">
+    <table class="table table-striped" >
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Telephone</th>
+                <th>Zipcode</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for profile in profile %}
+            <tr>
+                <td> <input type="text" class="form-control"  name="fname"   value="{{profile["fname"]}}"   size="8"  required > </td>
+                <td> <input type="text" class="form-control"  name="lname"   value="{{profile["lname"]}}"   size="8"  required > </td>
+                <td> <input type="text" class="form-control"  name="email"   value="{{profile["email"]}}"   size="13" required > </td>
+                <td> <input type="text" class="form-control"  name="city"   value="{{profile["city"]}}"    size="7 " required > </td>
+                <td> <input type="text" class="form-control"  name="state"   value="{{profile["state"]}}"   size="12" required > </td>
+                <td> <input type="text" class="form-control"  name="tel"   value="{{profile["tel"]}}"     size="7"  required minlength="10"> </td>
+                <td> <input type="text" class="form-control"  name="zipcode"   value="{{profile["zipcode"]}}" size="7 " required minlength="10"> </td>
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+    </table>
+
+      <div class="col-12">
+       <button class="btn btn-success"  type="submit">Update</button>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+      </div>
+        </form>
+</div>
+
+
+{% endblock %}

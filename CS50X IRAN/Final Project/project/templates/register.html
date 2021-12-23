@@ -1,0 +1,98 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+
+
+    <form action="/register" method="post"  class="row g-3">
+      <div  class="col-md-6">
+        <label >First name :</label>
+        <input class="form-control" type="text" name="fname" placeholder="First name" required>
+         <label id="nameewrong" ></label>
+
+      </div>
+
+        <div class="col-md-6">
+       <label >Username</label>
+       <input autocomplete="off" name="username" id="username" class="form-control"  placeholder="Min 3 letter" type="text" required minlength="3">
+      </div>
+
+      <div class="col-md-6">
+        <label >Last name :</label>
+        <input type="text"  name="lname"  id="lname"class="form-control" placeholder="Family " required>
+     </div>
+
+       <div class="col-md-6">
+        <label >Password :</label>
+        <input id="password" class="form-control" name="password" placeholder="Minimum 4 digit" type="password" onkeyup="check()" required minlength="4" >
+      </div>
+
+      <div  class="col-md-6">
+        <label >Email add : </label>
+          <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+
+      </div>
+
+      <div class="col-md-6">
+        <label >Conf pass:</label>
+        <input id="confirm_password"  class="form-control" name="confirmation"  placeholder="Confrim Password " type="password"  onkeyup="check()" required>
+        <span id='message' ></span>
+      </div>
+
+        <div class="col-md-6">
+        <label >City name : </label>
+        <input type="text" class="form-control"  name="city" placeholder="Birjand" required>
+      </div>
+
+  <div class="col-md-6">
+        <label >Zip code :</label>
+        <input type="text" class="form-control"  name="zipcode" placeholder="Min 10 Digit" required minlength="10">
+      </div>
+
+ <div class="col-md-6">
+        <label >State name </label>
+        <input type="text" class="form-control" name="state"  placeholder="South khorasan" required >
+      </div>
+
+       <div class="col-md-6">
+        <label >Cell num :</label>
+        <input type="text" class="form-control"  name="tel" placeholder="Min 10 Digit" required minlength="10">
+      </div>
+
+      <div class="col-12">
+       <button class="btn btn-success"  type="submit">Register</button>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+
+      </div>
+
+  </form>
+
+  <script >
+
+    var check = function()
+{
+    if (document.getElementById('password').value ==  document.getElementById('confirm_password').value)
+    {
+      document.getElementById('message').style.color = 'green';
+      document.getElementById('message').innerHTML = '✔';
+    }
+    else
+    {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = '×';
+    }
+}
+
+  </script>
+
+{% endblock %}
