@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: compare times  in random and sorted ways
+
+sort2 uses: Merge Sort
+
+How do you know?: fastes way in all states
+
+sort3 uses: Selection sort
+
+How do you know?: second way in all states but except in sorted thas was third level
