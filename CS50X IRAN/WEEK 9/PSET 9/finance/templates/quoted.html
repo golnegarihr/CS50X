@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Qouted
+{% endblock %}
+
+{% block main %}
+   <p>  A Share of {{ getdata.name}} costs  {{ usd_routin (getdata.price) }}  </p>
+{% endblock %}

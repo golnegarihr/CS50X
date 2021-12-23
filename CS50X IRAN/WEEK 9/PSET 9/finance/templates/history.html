@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tarakonesh History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped" >
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>type</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>time</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for tarakonesh  in tarakonesh %}
+            <tr>
+                <td>  {{  tarakonesh["symbol"].upper()}}   </td>
+                <td>  {{  tarakonesh["type"]  }}           </td>
+                <td>  {{  tarakonesh["shares"]  }}         </td>
+                <td>  {{ usd (tarakonesh["price"] ) }}     </td>
+                <td>  {{tarakonesh["time"]}}               </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}
