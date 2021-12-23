@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            // TODO: Add code to check answers to questions
+         document.addEventListener("DOMContentLoaded", function()
+         {
+
+            // check answer and then if was correct change color to green
+
+            // and  write correct comment
+
+            let iscorrect = document.querySelector(".correct");
+            iscorrect.addEventListener("click", function()
+            {
+                iscorrect.style.backgroundColor = "green";
+                document.querySelector("#statuse_answer1").innerHTML = "Correct!";
+            });
+
+            // if was incorrect change color to red
+            // and   write  incorrect comment
+
+            let incorrect1 = document.querySelector(".incorrect1");
+            incorrect1.addEventListener("click", function()
+            {
+                incorrect1.style.backgroundColor = "red";
+                document.querySelector("#statuse_answer1").innerHTML = "Incorrect!";
+            });
+
+            let incorrect2 = document.querySelector(".incorrect2");
+            incorrect2.addEventListener("click", function()
+            {
+                incorrect2.style.backgroundColor = "red";
+                document.querySelector("#statuse_answer1").innerHTML = "Incorrect!";
+            });
+
+            let incorrect3 = document.querySelector(".incorrect3");
+            incorrect3.addEventListener("click", function()
+            {
+                incorrect3.style.backgroundColor = "red";
+                document.querySelector("#statuse_answer1").innerHTML = "Incorrect!";
+            });
+
+            let incorrect4 = document.querySelector(".incorrect4");
+            incorrect4.addEventListener("click", function()
+            {
+                incorrect4.style.backgroundColor = "red";
+                document.querySelector("#statuse_answer1").innerHTML = "Incorrect!";
+            });
+
+            // part 2
+            // Check free response section
+
+            document.querySelector("#checktext").addEventListener("click", function()
+            {
+            //  answer check with correct anwer that is equal == programming so is correct
+            // then change color textinput to green  and was not eqaul change to red
+            // finally write  correct or incorrect comment
+                let getanswer = document.querySelector("input");
+
+                if (getanswer.value== "programming")
+                {
+                    getanswer.style.backgroundColor = "green";
+                    document.querySelector("#statuse_answer2").innerHTML = "Correct!";
+                }
+                else
+                {
+                    getanswer.style.backgroundColor = "red";
+                    document.querySelector("#statuse_answer2").innerHTML = "Incorrect!";
+                }
+
+            });
+        } );
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                   <h3 >
+                      What Is Important Rather Than Others In Our Life    ?  <br>
+                   </h3>
+                      <button  class="incorrect1"  >  1 . Entertaintment     </button>
+                      <button  class="incorrect2"  >  2 . Married            </button>
+                      <button  class="correct"     >  3 . Full-Time Job      </button>
+                      <button  class="incorrect3"  >  4 . Investment         </button>
+                      <button  class="incorrect4"  >  5 . Have A Plan        </button>
+                      <p id="statuse_answer1"> </p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                <!-- TODO: Add free response question here -->
+                <h3>
+                      What Is the Best Job Today ?  <br>
+                </h3>
+                <input type="text" />
+                <button id="checktext" >Check Answer </button>
+                <p id="statuse_answer2"></p>
+            </div>
+
+        </div>
+    </body>
+</html>

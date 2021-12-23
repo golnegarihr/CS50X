@@ -1,0 +1,83 @@
+body
+{
+  background:    #91CCC6  ;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+}
+
+#hindex
+    {
+     margin-left:  5px;
+     margin-top: 3px;
+
+    }
+
+div
+    {
+
+    text-align: center;
+    }
+
+#aks
+{
+     border-color:   #CC260C ;
+     border-style:  outset ;
+     size:  auto;
+}
+
+#birjand
+{
+    color: #CC0000;
+    font: bold ;
+    font-family:  "Passion One", Impact, Charcoal, sans-serif;
+    font-size: xx-large;
+}
+
+#well
+{
+      font-family: Impact, Charcoal, sans-serif;
+      font-size: x-large;
+}
+.intro
+{
+    text-align: center;
+    font-family: fantasy;
+}
+
+.radif
+{
+      color: #0818CC;
+      margin-left: 10px ;
+       font-stretch: wider  ;
+       font-size: medium;
+}
+
+
+a
+{
+     font-family: Lobster;
+     font-size: large;
+     color: #0A0006;
+
+}
+
+a:hover
+{
+    color:  #FF0000 ;
+}
+
+p
+{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: large;
+     grid-auto-columns: auto;
+     grid-auto-rows: auto;
+}
+
+.color
+{
+    color: #FF0000;
+    margin-left: 5px;
+}
